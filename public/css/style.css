@@ -1,0 +1,80 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.sendMsg{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.sendMsg > textarea {
+    border-color: transparent;
+    border-radius: 10px;
+    width: 380px;
+    height: 80px;
+    padding: 10px;
+}
+.sendMsg > textarea:hover{
+    border-color: #BBB3A8;
+}
+.sendMsg > button{
+    background-color: white;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    transition: 0.3s;
+    margin: auto 10px;
+}
+.sendMsg > button:hover{
+    background-color: #A37B46;
+    color: white;
+}
+.getMsg{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.getMsg > h2{
+    margin: 0;
+    padding: 0;
+}
+.getMsg > p{
+    width: 660px;
+}
+
+@media all and (max-width: 480px) {
+    body{
+        background-color: aqua;
+        width: 100vw;
+    }
+    .sendMsg{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: cadetblue;
+    }
+    .sendMsg > textarea {
+        border-color: transparent;
+        border-radius: 10px;
+        width: 90%;
+        height: 80px;
+        padding: 10px;
+    }
+    .sendMsg > button{
+        background-color: white;
+        border-color: transparent;
+        border-radius: 10px;
+        width: 60%;
+        height: 40px;
+        padding: 5px;
+        transition: 0.3s;
+        margin: 10px auto;
+    }
+
+}

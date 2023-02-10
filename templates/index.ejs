@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link  rel="stylesheet" href="/public/css/style.css">
+    <script src="../public/js/scripts.js"></script>
+    <script>
+        function sendMessage() {
+            var token = '6262320229:AAGXga_bACBigzvXi_EhrzC8CGGsvS0EX0s';
+            var chat_id = '468004165';
+            var text = document.getElementById('message').value;
+            var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&text=' + text;
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url);
+            xhr.send();
+        }
+    </script>
+    <title>Title</title>
+
+</head>
+<body>
+<div class="sendMsg">
+    <textarea type="text" id="message" placeholder="Введи тут текст"></textarea>
+    <button onclick="sendMessage()">Отправить сообщение</button>
+<!--    <button onclick="sendMessage2()">Спросить у OpenAI</button>-->
+</div>
+<div class="getMsg">
+    <h2>Text from bot:</h2>
+    <p><%= textFromTg %></p>
+</div>
+</body>
+</html>
