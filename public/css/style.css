@@ -48,33 +48,22 @@ body{
 }
 
 @media all and (max-width: 480px) {
-    body{
-        background-color: aqua;
-        width: 100vw;
-    }
     .sendMsg{
-        margin: 20px;
-        display: flex;
         flex-direction: column;
-        width: 100%;
-        background-color: cadetblue;
+        margin-bottom: 0;
     }
     .sendMsg > textarea {
-        border-color: transparent;
-        border-radius: 10px;
         width: 90%;
         height: 80px;
-        padding: 10px;
+        margin: 0 auto;
     }
     .sendMsg > button{
-        background-color: white;
-        border-color: transparent;
-        border-radius: 10px;
         width: 60%;
-        height: 40px;
-        padding: 5px;
-        transition: 0.3s;
         margin: 10px auto;
     }
-
+    .getMsg > p{
+        width: 100%;
+        word-break: break-all;
+        margin-top: 10px;
+    }
 }
