@@ -63,7 +63,9 @@ body{
     }
     .getMsg > p{
         width: 100%;
-        word-break: break-all;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
         margin-top: 10px;
     }
 }
